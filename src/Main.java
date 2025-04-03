@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 ///существует компания по разработке сайта там есть персонал:
 /// разработчик, менеджер, сис админ, уборщица.
 /// разработать консольный интерфейс с меню в котором по цифрам можно будет выбирать какой то пункт меню
@@ -10,9 +12,21 @@
 ///
 
 
-
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
+
+        System.out.println("Приложения для hr сотрудники компаний");
+        System.out.println("1. Добавить сотрудника");
+        System.out.println("2. Добавить сотрудника в проект");
+        System.out.println("3. Уволить сотрудника");
+        System.out.println("4. Выход");
+        System.out.println("Выберите нужный пункт");
+
+        Scanner scanner = new Scanner(System.in);
+
+        String text = scanner.nextLine();
+        System.out.println(text);
+
+
     }
 }
